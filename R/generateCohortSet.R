@@ -629,7 +629,8 @@ generateCohortSet <- function(cdm,
     table = cdm[[name]],
     cohortSetRef = cohortSetRef,
     cohortAttritionRef = cohort_attrition_ref,
-    cohortCodelistRef = cohortCodelistRef)
+    cohortCodelistRef = cohortCodelistRef, 
+    .softValidation = TRUE)
 
   cli::cli_progress_done()
 
